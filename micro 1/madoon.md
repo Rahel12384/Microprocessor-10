@@ -50,7 +50,44 @@ LED به همراه مقاومت به پایه خروجی دیجیتال متص�
 
 
 ## کد
+int ir = 2;
 
+int PinLed = 10;
+
+int val=0;
+ 
+ 
+void setup()
+
+{
+
+    pinMode(ir, INPUT);
+    
+    pinMode(PinLed, OUTPUT);
+ 
+}
+ 
+void loop()
+
+{
+
+    if(digitalRead(ir) == LOW)
+    
+    {
+    
+        digitalWrite(PinLed, HIGH);
+    
+    }
+    
+    else
+    
+    {
+    
+        digitalWrite(PinLed, LOW);
+   
+    }
+
+}
 
 
 
@@ -67,6 +104,6 @@ LED زمانی روشن می‌شود که سنسور وجود شیء را تش�
 
 
 ## خروجی آزمایش:
-![alt text]()
+![alt text](https://github.com/Rahel12384/Microprocessor-10/blob/main/micro%201/VID_20250107_030853_439.gif)
 
 
